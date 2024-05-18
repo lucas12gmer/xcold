@@ -1,0 +1,95 @@
+:root,
+[data-theme='light'] {
+    --stats-color: #fff;
+}
+
+[data-theme='dark'] {
+    --stats-color: #23252e;
+}
+
+.date-range {
+    text-align: center;
+}
+
+.date-range input[type="date"] {
+    background-color: rgb(142, 210, 205);
+    padding: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin: 25px 15px 25px 15px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 60px auto;
+    align-items: flex-start;
+    color: var(--text-color);
+}
+
+.chart-container {
+    display: inline-block;
+    width: 48%;
+    height: 400px;
+    margin: 10px auto;
+}
+
+.info-box {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: var(--stats-color);
+    padding: 20px;
+    height: auto;
+}
+
+.info-box-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-box-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.info-box-stat {
+    text-align: center;
+}
+
+.info-box-stat-value {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.info-box-stat-label {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+.activity .player {
+    font-weight: bold;
+}
+
+.activity .date {
+    color: #999;
+}
+
+.activity p {
+    margin-top: 10px;
+}
+
+.activity a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff0000;
+}

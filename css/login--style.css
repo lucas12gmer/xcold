@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: url(../images/background.png) no-repeat center fixed;
+    background-size: cover;
+}
+
+:root {
+    --page-content-bgColor: #242e42;
+    --page-content-hover-bgColor: #1d2636;
+}
+
+.login-page {
+    width: 360px;
+    padding: 15% 0 0;
+    margin: auto;
+}
+
+.form {
+    background: white;
+    padding: 45px;
+}
+
+.form,
+.alert {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.tab-group {
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+}
+
+.tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tab-group > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 17px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.tab-group > li > a:hover,
+.tab-group .active > a {
+    box-shadow: inset 0px -4px var(--page-content-bgColor);
+    color: var(--page-content-hover-bgColor);
+}
+
+
+.form input {
+    outline: 0;
+    background: #F2F2F2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    text-transform: uppercase;
+    background: var(--page-content-bgColor);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: var(--page-content-hover-bgColor);
+}
+
+.alert {
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.alert.warning {
+    background-color: #FF6666;
+}
